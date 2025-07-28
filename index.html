@@ -132,8 +132,10 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          <p>Obtaining well-generalized policies that can adapt to dynamic environmental variations remains a challenge in visual reinforcement learning (VRL). Focusing on task-relevant information while ignoring distractions is widely regarded as an effective solution to this problem. However, existing
+works enhance agents' information extraction through auxiliary objectives such as contrastive learning or state aggregation; these approaches primarily operate in the training process and may not filter out unseen distractions during testing. To further increase the accuracy of information extraction and improve generalization, we propose information extraction through Saliency Map and Memory Classifier (SMMC) framework. Inspired by human behavior, one can ignore task-irrelevant information in the test based on memorized task-
+relevant parts in the training. SMMC operates during the test and extracts information according to what the agent focused on during training. Specifically, in the training process, SMMC segments the training observations using a pretrained segmentation model, computes saliency maps to identify task-relevant parts, and then trains a binary classifier, referred to as the memory classifier, to recognize these task-relevant parts. At test time, SMMC segments test observation
+and uses the memory classifier to retain only task-relevant parts, effectively extracting task-relevant information. Experiments conducted on the DeepMind Control Generalization Benchmark (DMC-GB) and Meta-World across diverse tasks and test modes, results demonstrate that SMMC can extract task-relevant patches during training and test with an accuracy exceeding 98%, achieving state-of-the-art (SOTA) gen-eralization performance in test
           </p>
         </div>
       </div>
