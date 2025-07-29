@@ -486,17 +486,17 @@ and uses the memory classifier to retain only task-relevant parts, effectively e
       <div class="column is-half">
         <figure class="image">
           <!-- Replace this with your actual results image -->
-          <img src="static/images/carousel1.jpg" alt="Table of experimental results">
+          <img src="static/images/drawerresult.png" alt="Table of experimental results">
         </figure>
         <p class="has-text-centered mt-2">
-          <strong>Generalization on Drawer World.</strong> Evaluation on distracting textures. PIE-G is robust to the texture changing.
+          <strong>Success rate of DrawerWorld  robotic manipulation tasks.</strong> Some results of used for comparison are obtained from PIEG(Yuan et al. 2022b) and we supplement the results of SGQN and completed the remaining tasks. The best result on each task is in bold.
         </p>
       </div>
       <!-- Right Column: Text Description -->
       <div class="column is-half">
         <div class="content">
           <p>
-            We conduct experiments on the Drawer World benchmark to test the agent's generalization ability in manipulation tasks with different background textures. PIE-G can achieve better or comparable generalization performance in all the settings with a <strong>+21%</strong> boost on average while other approaches may suffer from the CNN's sensitivity in the face of various textures.
+            We conduct additional experiments on robotic manipulation tasks: Drawer-Open and Drawer-Close from MetaWorld. SMMC consistently achieves better or comparable generalization performance across all settings. Results on the DrawerWorld benchmark further indicate that depend on agent awareness-driven task-relevant object selector, SMMC provides the policy learner with clean and invariant visual inputs, leading to superior generalization under different visual domain shifts.
           </p>
         </div>
       </div>
