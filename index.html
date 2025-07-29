@@ -197,11 +197,9 @@ and uses the memory classifier to retain only task-relevant parts, effectively e
     <h2 class="title is-4">Performance</h2>
     <div class="content">
       <p>
-        Experiments are conducted on two environments, respectively Deepmind Control and Franka Emika Robotics. To simulate the real condition that agent is trained in a natural scene with varies task-irrelevant distractions, we replace the static background with frames from a large netural RGB video dataset.
+        For the generalization test, as shown in the curves, regardless of the test mode, the test curves of SMMC are highly similar and exhibit consistent trends. Moreover, the test curves closely match the training ones, the gap between training and test is largely eliminated, which indicates that SMMC can significantly enhance generalization performance.
       </p>
-      <p>
-        Six baselines are selected for comparison, including representation methods, model-based methods, and data-augmentation methods. FTD achieves the best performance in six out of nine tasks.
-      </p>
+    
     </div>
     <div class="columns is-centered">
       <div class="column is-full">
@@ -287,10 +285,11 @@ and uses the memory classifier to retain only task-relevant parts, effectively e
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 ">Agent Awareness-driven task-relevant object selector</h3>
+    <h2 class="title is-3 ">Agent Awareness-driven task-relevant selection mechanism</h3>
     <div class="content">
       <p>
-        The selected frames of FTD and the reconstruction frames of Denoised-MDP are plotted for comparison. The selected frames of FTD are more precise and thus have better interpretability.
+        Overall,
+        SMMC achieves over 95% accuracy in locating the "robot" part during training. Although the saliency maps only provide a coarse indication of the approximate location of important parts, when combined with SAM and agent self-awareness-driven selection mechanism, SMMC succeed in extract task-relevant information with high accuracy. In thetest,  the classifier is capable of selecting task-relevant information with high accuracy (exceeding 97%) as well. This highlights the efficiency and effectiveness of the task-relevant information extraction strategy proposed in SMMC.
       </p>
     </div>
     <!-- Image grid -->
@@ -426,10 +425,10 @@ and uses the memory classifier to retain only task-relevant parts, effectively e
 </section>
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 ">Agent Awareness-driven task-relevant object selector</h3>
+    <h2 class="title is-3 ">Agent Self-Awareness-driven task-relevant selection mechanism</h3>
     <div class="content">
       <p>
-        The selected frames of FTD and the reconstruction frames of Denoised-MDP are plotted for comparison. The selected frames of FTD are more precise and thus have better interpretability.
+        As in the DMC-GB environment, the agent is also able to accurately identify the Sawyer robotic arm and the drawer as task-relevant objects in the DrawerWorld robotic manipulation task, thereby reducing distraction during testing and enhancing generalization performance.
       </p>
     </div>
     <!-- Image grid -->
