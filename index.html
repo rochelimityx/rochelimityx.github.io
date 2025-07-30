@@ -227,24 +227,24 @@ and uses the memory classifier to retain only task-relevant parts, effectively e
          <figure >
             <!-- Removed w-full and using inline style to control size -->
             <video src="static/videos/ww_hard.mp4" autoplay loop muted playsinline class="border border-gray-300 rounded mx-auto" style="width: 200px;"></video>
-            <figcaption class="mt-2 text-sm text-gray-700 ">Walker walk (Reward:899)</figcaption>
+            <figcaption class="mt-2 text-sm text-gray-700 ">Walker walk</figcaption>
          </figure>
          <!-- Test Videos -->
          <figure>
              <video src="static/videos/ws_hard.mp4" autoplay loop muted playsinline class="border border-gray-300 rounded mx-auto" style="width: 200px;"></video>
-             <figcaption class="mt-2 text-sm text-gray-700 font-bold">Walker stand (Reward:954)</figcaption>
+             <figcaption class="mt-2 text-sm text-gray-700 font-bold">Walker stand</figcaption>
          </figure>
          <figure>
              <video src="static/videos/cc_hard.mp4" autoplay loop muted playsinline class="border border-gray-300 rounded mx-auto" style="width: 200px;"></video>
-             <figcaption class="mt-2 text-sm text-gray-700 font-bold">Cup catch (Reward:953)</figcaption>
+             <figcaption class="mt-2 text-sm text-gray-700 font-bold">Cup catch</figcaption>
          </figure>
          <figure>
           <video src="static/videos/fs_hard.mp4" autoplay loop muted playsinline class="border border-gray-300 rounded mx-auto" style="width: 200px;"></video>
-          <figcaption class="mt-2 text-sm text-gray-700 font-bold">Finger spin (Reward:971)</figcaption>
+          <figcaption class="mt-2 text-sm text-gray-700 font-bold">Finger spin</figcaption>
         </figure>
          <figure>
              <video src="static/videos/cp_hard.mp4" autoplay loop muted playsinline class="border border-gray-300 rounded mx-auto" style="width: 200px;"></video>
-             <figcaption class="mt-2 text-sm text-gray-700 font-bold">Cartpole swingup (Reward:851)</figcaption>
+             <figcaption class="mt-2 text-sm text-gray-700 font-bold">Cartpole swingup</figcaption>
          </figure>
          
          </div>
@@ -256,32 +256,50 @@ and uses the memory classifier to retain only task-relevant parts, effectively e
              <!-- Training Video -->
              <figure > 
                 <video src="static/videos/ww_box.mp4" autoplay loop muted playsinline class="border border-gray-300 rounded mx-auto" style="width: 200px;"></video>
-                <figcaption class="mt-2 text-sm text-gray-700 ">Walker walk (Reward:905)</figcaption> <!-- Made font bold -->
+                <figcaption class="mt-2 text-sm text-gray-700 ">Walker walk</figcaption> <!-- Made font bold -->
              </figure>
 
              <!-- Test Videos -->
              <figure>
                  <video src="static/videos/ws_box.mp4" autoplay loop muted playsinline class="border border-gray-300 rounded mx-auto" style="width: 200px;"></video>
-                 <figcaption class="mt-2 text-sm text-gray-700 font-bold">Walker stand (Reward:963)</figcaption>
+                 <figcaption class="mt-2 text-sm text-gray-700 font-bold">Walker stand</figcaption>
              </figure>
              <figure>
                  <video src="static/videos/cc_box.mp4" autoplay loop muted playsinline class="border border-gray-300 rounded mx-auto" style="width: 200px;"></video>
-                 <figcaption class="mt-2 text-sm text-gray-700 font-bold">Cup catch (Reward:942)</figcaption>
+                 <figcaption class="mt-2 text-sm text-gray-700 font-bold">Cup catch</figcaption>
              </figure>
              <figure>
               <video src="static/videos/fs_box.mp4" autoplay loop muted playsinline class="border border-gray-300 rounded mx-auto" style="width: 200px;"></video>
-              <figcaption class="mt-2 text-sm text-gray-700 font-bold">Finger spin (Reward:971)</figcaption>
+              <figcaption class="mt-2 text-sm text-gray-700 font-bold">Finger spin</figcaption>
             </figure>
              <figure>
                  <video src="static/videos/cp_box.mp4" autoplay loop muted playsinline class="border border-gray-300 rounded mx-auto" style="width: 200px;"></video>
-                 <figcaption class="mt-2 text-sm text-gray-700 font-bold">Cartpole swingup (Reward:794)</figcaption>
+                 <figcaption class="mt-2 text-sm text-gray-700 font-bold">Cartpole swingup</figcaption>
              </figure>
              
           </div>
         </div>
   </div>
 </section>
-
+<!-- **NEW:** Experiments Section with Performance Curves -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4">Performance</h2>
+    <div class="content">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <figure class="image">
+          <!-- Replace this with your actual performance curves image -->
+          <img src="static/images/dmc_table.png" alt="Performance curves of different methods">
+        </figure>
+      </div>
+      <p>
+        <strong>Generalization comparison between SMMC and other SOTA algorithms in different tasks and test modes of DMC-GB.</strong> SMMC outperforms prior SOTA methods in most of evaluation settings. 
+      </p>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
