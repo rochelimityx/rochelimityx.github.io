@@ -164,7 +164,6 @@ and uses the memory classifier to retain only task-relevant parts, effectively e
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <div class="content has-text-centered">
             <figure class="image">
               <!-- Replace this with your actual diagram image -->
               <img src="static/images/smam-framework.png" alt="Framework diagram of PIE-G">
@@ -172,7 +171,6 @@ and uses the memory classifier to retain only task-relevant parts, effectively e
             <p>
               <strong>The overall structure of SMMC.</strong> SMMC employs a pre-trained visual segmentation model to decompose training observations into multiple image patches. After segmentation, SMMC computes saliency maps to distinguish between task-relevant and irrelevant patches, which are subsequently labeled and stored in a memory tank. In the test, SMMC first segments test observations with SAM, then utilizes the memory classifier to select the patches that are most likely to contain task-relevant information, and masks out other patches (into black), thus excluding the task-irrelevant information.
             </p>
-        </div>
       </div>
     </div>
   </div>
